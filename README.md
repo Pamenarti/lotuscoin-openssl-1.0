@@ -1,12 +1,10 @@
 # Woodcoin
 
-## (A Funkenstein the Dwarf Presentation)
+NOTE:  This version is for systems running OpenSSL 1.0
+For up-to-date OpenSSL compatibility use:
+https://github.com/funkshelper/woodcoin
 
 ============================================
-
-While many dwarfs were content to toil in the mines I have always felt affinity for the forest.  
-
-Now you can chop logs.  
 
 The Woodcoin chain is a log structured database.
 
@@ -36,20 +34,15 @@ Technical Details:
 
 * New ECDSA curve: X9_62_prime256v1 
 
-* Algo = Pure Skein (double skein) Bruce Schneier is a lumberjack and NSA didn't choose this algo.
+* Algo = Pure Skein (double skein) 
 
 =============================================
 
-## Binary Wallets
-
-Some binaries are stored at https://github.com/paulmadore/woodcoin-dot-org/blob/master/bins. We try to keep Woodcoin accessible to all. 
-
-=============================================
-Build Instructions
+## Build Instructions
 
 TYou will need these dependencies or equivalent:
 
-sudo apt-get install git build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev qt-sdk libminiupnpc-dev libqrencode-dev 
+sudo apt-get install build-essential autoconf libboost-all-dev libcurl4-openssl-dev libdb-dev qt-sdk libminiupnpc-dev  openssl libzmq3-dev libevent-dev libssl-dev libminiupnpc-dev libtool libdb++-dev libqrencode-dev 
 
 Get the source with this command:
 
@@ -72,13 +65,5 @@ For the graphical client, simply go into the debug window (under Help) and type:
 
 =============================================
 
-
-## Changelog:
-
-* v1.0 - Baruk Khazad!  Woodcutting for the masses.
-
-* v1.1 - Hard fork to litecoin branch.  Block 3002.
-
-* v1.2 - Add paper wallet and QR code functionality.
 
 ### Visit Woodcoin.org for more information. 
