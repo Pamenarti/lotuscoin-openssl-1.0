@@ -1,7 +1,7 @@
 src/*.exe
-src/woodcoin
-src/woodcoind
-src/test_woodcoin
+src/lotuscoin
+src/lotuscoind
+src/test_lotuscoin
 .*.swp
 *.*~*
 *.bak
@@ -9,20 +9,20 @@ src/test_woodcoin
 *.orig
 *.o
 *.patch
-.woodcoin
+.lotuscoin
 *.core
 *pro.user.*
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-woodcoind
-woodcoin-qt
-Woodcoin-Qt.app
+lotuscoind
+lotuscoin-qt
+Lotuscoin-Qt.app
 
 # Unit-tests
 Makefile.test
-woodcoin-qt_test
+lotuscoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
