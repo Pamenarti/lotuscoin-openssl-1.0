@@ -47,9 +47,9 @@ then execute the following:
     qmake [optional: qmake "USE_QRCODE=1"]
     make
 
-Alternatively, install `Qt Creator`_ and open the `woodcoin-qt.pro` file.
+Alternatively, install `Qt Creator`_ and open the `lotuscoin-qt.pro` file.
 
-An executable named `woodcoin-qt` will be built.
+An executable named `lotuscoin-qt` will be built.
 
 .. _`Qt Creator`: http://qt-project.org/downloads/
 
@@ -74,9 +74,9 @@ Mac OS X
 	brew update
 	brew install boost miniupnpc openssl berkeley-db4
 
-- If using HomeBrew,  edit `woodcoin-qt.pro` to account for library location differences. There's a diff in `contrib/homebrew/bitcoin-qt-pro.patch` that shows what you need to change, or you can just patch by doing
+- If using HomeBrew,  edit `lotuscoin-qt.pro` to account for library location differences. There's a diff in `contrib/homebrew/bitcoin-qt-pro.patch` that shows what you need to change, or you can just patch by doing
 
-        patch -p1 < contrib/homebrew/woodcoin.qt.pro.patch
+        patch -p1 < contrib/homebrew/lotuscoin.qt.pro.patch
 
 - Open the litecoin-qt.pro file in Qt Creator and build as normal (cmd-B)
 

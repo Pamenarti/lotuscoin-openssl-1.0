@@ -1,12 +1,12 @@
-# Woodcoin
+# Lotuscoin
 
 NOTE:  This version is for systems running OpenSSL 1.0
 For up-to-date OpenSSL compatibility use:
-https://github.com/funkshelper/woodcoin
+https://github.com/funkshelper/lotuscoin
 
 ============================================
 
-The Woodcoin chain is a log structured database.
+The Lotuscoin chain is a log structured database.
 
 The money supply is logarithmic.
 
@@ -46,18 +46,18 @@ sudo apt-get install build-essential autoconf libboost-all-dev libcurl4-openssl-
 
 Get the source with this command:
 
-git clone https://github.com/funkshelper/woodcoin.git
+git clone https://github.com/funkshelper/lotuscoin.git
 
-To build woodcoin-qt issue “qmake” and then “make“.  qt4 is required, on some systems you may need to issue “export QT_SELECT=qt4” to ensure the proper version is used.
+To build lotuscoin-qt issue “qmake” and then “make“.  qt4 is required, on some systems you may need to issue “export QT_SELECT=qt4” to ensure the proper version is used.
 
-To build woodcoind by itself navigate to /src/ and issue make -f makefile.unix.
+To build lotuscoind by itself navigate to /src/ and issue make -f makefile.unix.
 
 --------------------------------------------
 ## Mining (Woodcutting)
 
-To start woodcutting with woodcoind, simply launch it like this: 
+To start woodcutting with lotuscoind, simply launch it like this: 
 
-```./woodcoind setgenerate true```
+```./lotuscoind setgenerate true```
 
 For the graphical client, simply go into the debug window (under Help) and type:
 
@@ -66,4 +66,4 @@ For the graphical client, simply go into the debug window (under Help) and type:
 =============================================
 
 
-### Visit Woodcoin.org for more information. 
+### Visit Lotuscoin.org for more information. 

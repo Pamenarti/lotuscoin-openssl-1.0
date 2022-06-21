@@ -61,6 +61,6 @@
         <file alias="th_TH">locale/bitcoin_th_TH.ts</file>
     </qresource>
     <qresource prefix="/">
-        <file alias="woodcoinlogo.png">res/images/woodcoinlogo.png</file>
+        <file alias="lotuscoinlogo.png">res/images/lotuscoinlogo.png</file>
     </qresource>
 </RCC>

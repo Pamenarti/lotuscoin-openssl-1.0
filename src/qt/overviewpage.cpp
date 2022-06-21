@@ -108,7 +108,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QPixmap pix(":/woodcoinlogo.png");
+    QPixmap pix(":/lotuscoinlogo.png");
       ui->logo->setPixmap(pix);
 
     // Recent transactions

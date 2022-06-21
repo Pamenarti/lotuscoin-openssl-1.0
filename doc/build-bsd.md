@@ -30,15 +30,15 @@ To build the **QT Wallet** on FreeBSD 10.x:
 ### Sequence
 
 ```
-qmake-qt4 woodcoin-qt.pro "BDB_LIB_PATH=/usr/local/lib/db4.8" "BDB_INCLUDE_PATH=/usr/include/db4.8" "BDB_LIB_SUFFIX=-4.8" "USE_UPNP=-"
+qmake-qt4 lotuscoin-qt.pro "BDB_LIB_PATH=/usr/local/lib/db4.8" "BDB_INCLUDE_PATH=/usr/include/db4.8" "BDB_LIB_SUFFIX=-4.8" "USE_UPNP=-"
 gmake
 ```
 
 This should build an executable of the QT graphical wallet. 
 
-## Daemon (woodcoind)
+## Daemon (lotuscoind)
 
-To only build **woodcoind** on BSD:
+To only build **lotuscoind** on BSD:
 
 ### Dependencies
 
@@ -61,4 +61,4 @@ gmake -f makefile.bsd "USE_UPNP=-"
 
 ## Post-Installation
 
-For usage help, `./woodcoind --help`
+For usage help, `./lotuscoind --help`

@@ -17,7 +17,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Woodcoin cannot be compiled without assertions."
+# error "Lotuscoin cannot be compiled without assertions."
 #endif
 
 //
@@ -3946,7 +3946,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// WoodcoinMiner
+// LotuscoinMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4359,7 +4359,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("WoodcoinMiner:\n");
+    printf("LotuscoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4368,7 +4368,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("WoodcoinMiner : generated block is stale");
+            return error("LotuscoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4382,7 +4382,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("WoodcoinMiner : ProcessBlock, block not accepted");
+            return error("LotuscoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4390,9 +4390,9 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static LitecoinMiner(CWallet *pwallet)
 {
-    printf("WoodcoinMiner started\n");
+    printf("LotuscoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("woodcoin-miner");
+    RenameThread("lotuscoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4414,7 +4414,7 @@ void static LitecoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running WoodcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running LotuscoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4514,7 +4514,7 @@ void static LitecoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("WoodcoinMiner terminated\n");
+        printf("LotuscoinMiner terminated\n");
         throw;
     }
 }
