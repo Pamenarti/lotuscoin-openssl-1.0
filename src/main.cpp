@@ -67,7 +67,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 CScript COINBASE_FLAGS;
 
 // addended to messages for signature
-const string strMessageMagic = "WoodCoin Signed Message:\n";
+const string strMessageMagic = "LotusCoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;

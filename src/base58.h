@@ -272,9 +272,9 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 73, // Lotuscoin addresses start with W
+        PUBKEY_ADDRESS = 48, // Lotuscoin addresses start with L
         SCRIPT_ADDRESS = 5,
-        PUBKEY_ADDRESS_TEST = 135,
+        PUBKEY_ADDRESS_TEST = 48,
         SCRIPT_ADDRESS_TEST = 8,
     };
 
