@@ -2,7 +2,7 @@
 
 NOTE:  This version is for systems running OpenSSL 1.0
 For up-to-date OpenSSL compatibility use:
-https://github.com/funkshelper/lotuscoin
+https://github.com/Pamenarti/lotuscoin
 
 ============================================
 
@@ -46,16 +46,16 @@ sudo apt-get install build-essential autoconf libboost-all-dev libcurl4-openssl-
 
 Get the source with this command:
 
-git clone https://github.com/funkshelper/lotuscoin.git
+git clone https://github.com/Pamenarti/lotuscoin.git
 
 To build lotuscoin-qt issue “qmake” and then “make“.  qt4 is required, on some systems you may need to issue “export QT_SELECT=qt4” to ensure the proper version is used.
 
 To build lotuscoind by itself navigate to /src/ and issue make -f makefile.unix.
 
 --------------------------------------------
-## Mining (Woodcutting)
+## Mining (Lotuscutting)
 
-To start woodcutting with lotuscoind, simply launch it like this: 
+To start lotuscutting with lotuscoind, simply launch it like this: 
 
 ```./lotuscoind setgenerate true```
 
@@ -66,4 +66,4 @@ For the graphical client, simply go into the debug window (under Help) and type:
 =============================================
 
 
-### Visit Lotuscoin.org for more information. 
+### Visit Lotuscoin.xyz for more information. 
