@@ -274,7 +274,7 @@ public:
     {
         PUBKEY_ADDRESS = 48, // Lotuscoin addresses start with W
         SCRIPT_ADDRESS = 5,
-        PUBKEY_ADDRESS_TEST = 48,
+        PUBKEY_ADDRESS_TEST = 135,
         SCRIPT_ADDRESS_TEST = 8,
     };
 
