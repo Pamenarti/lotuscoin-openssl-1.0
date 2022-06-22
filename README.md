@@ -4,7 +4,7 @@ NOTE:  This version is for systems running OpenSSL 1.0
 For up-to-date OpenSSL compatibility use:
 https://github.com/Pamenarti/lotuscoin
 
-============================================
+--------------------------------------------
 
 The Lotuscoin chain is a log structured database.
 
@@ -12,10 +12,10 @@ The money supply is logarithmic.
 
 The unit is log.
  
-============================================
+--------------------------------------------
 
 Technical Details:
-
+```
 * RPC Port = 9338
 
 * P2P Ports = 8338 (testnet 18338)
@@ -35,15 +35,15 @@ Technical Details:
 * New ECDSA curve: X9_62_prime256v1 
 
 * Algo = Pure Skein (double skein) 
-
-=============================================
+```
+--------------------------------------------
 
 ## Build Instructions
 
 TYou will need these dependencies or equivalent:
-
+```
 sudo apt-get install build-essential autoconf libboost-all-dev libcurl4-openssl-dev libdb-dev qt-sdk libminiupnpc-dev  openssl libzmq3-dev libevent-dev libssl-dev libminiupnpc-dev libtool libdb++-dev libqrencode-dev 
-
+```
 Get the source with this command:
 
 git clone https://github.com/Pamenarti/lotuscoin.git
@@ -63,7 +63,7 @@ For the graphical client, simply go into the debug window (under Help) and type:
 
 ```setgenerate true```
 
-=============================================
+--------------------------------------------
 
 
 ### Visit Lotuscoin.xyz for more information. 
