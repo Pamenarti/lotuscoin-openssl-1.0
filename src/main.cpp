@@ -34,7 +34,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x30758383eae55ae5c7752b73388c1c85bdfbe930ad25ad877252841ed1e734a4");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Litecoin: starting difficulty is 1 / 2^12
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Lotuscoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -358,7 +358,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool CTxOut::IsDust() const
 {
-    // Litecoin: IsDust() detection disabled, allows any valid dust to be relayed.
+    // Lotuscoin: IsDust() detection disabled, allows any valid dust to be relayed.
     // The fees imposed on each dust txo is considered sufficient spam deterrant. 
     return false;
 }
@@ -619,7 +619,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
             nMinFee = 0;
     }
 
-    // Litecoin
+    // Lotuscoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1148,7 +1148,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         return pindexLast->nBits;
     }
 
-    // Litecoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Lotuscoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = nInterval-1;
     if ((pindexLast->nHeight+1) != nInterval)
@@ -4388,7 +4388,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
-void static LitecoinMiner(CWallet *pwallet)
+void static LotuscoinMiner(CWallet *pwallet)
 {
     printf("LotuscoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -4539,7 +4539,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&LitecoinMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&LotuscoinMiner, pwallet));
 }
 
 // Amount compression:
