@@ -34,7 +34,7 @@ Technical Details:
 
 * New ECDSA curve: X9_62_prime256v1 
 
-* Algo = Pure Skein (double skein) 
+* Algo = Pure Skein2 (double skein) 
 ```
 --------------------------------------------
 
